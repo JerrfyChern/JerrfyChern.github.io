@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Cache-Control" content="no-siteapp">
@@ -42,7 +42,7 @@
     
     <title>
         
-            Hello World | JerrfyChern的个人博客
+            我的第一篇文章 | JerrfyChern的个人博客
         
     </title>
     
@@ -58,7 +58,7 @@
                             <div id="sidebar" class="float-right">
     <a href="/" rel="home">
         <v-avatar size=96>
-            <img id="logo" src="/images/avatar.webp">     
+            <img id="logo" src="/images/favicon.png">     
         </v-avatar> 
     </a>
     <v-divider></v-divider>
@@ -79,6 +79,14 @@
     <v-list id="main-menu" class="font-weight-bold" flat>
         
             
+            <v-list-item href="/" link>
+            <v-list-item-icon><v-icon>fa fa-home</v-icon></v-list-item-icon>
+            <v-list-item-content>
+                主页
+            </v-list-item-content>
+            </v-list-item>
+        
+            
             <v-list-item href="/archives/" link>
             <v-list-item-icon><v-icon>archive</v-icon></v-list-item-icon>
             <v-list-item-content>
@@ -90,23 +98,7 @@
             <v-list-item href="/about/" link>
             <v-list-item-icon><v-icon>account_circle</v-icon></v-list-item-icon>
             <v-list-item-content>
-                与我相关
-            </v-list-item-content>
-            </v-list-item>
-        
-            
-            <v-list-item href="https://garybear.cn/" link>
-            <v-list-item-icon><v-icon>rss_feed</v-icon></v-list-item-icon>
-            <v-list-item-content>
-                我的博客
-            </v-list-item-content>
-            </v-list-item>
-        
-            
-            <v-list-item href="https://garybear.cn/hexo-theme-insulin/doc/#/" link>
-            <v-list-item-icon><v-icon>insert_drive_file</v-icon></v-list-item-icon>
-            <v-list-item-content>
-                说明文档
+                关于
             </v-list-item-content>
             </v-list-item>
         
@@ -114,9 +106,9 @@
     <v-divider></v-divider>
     
         <div class="post-toc">
-            <a href="/2025/12/15/hello-world/" class="toc-header">Table of Contents</a>
+            <a href="/2025/12/16/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/" class="toc-header">文章目录</a>
             <div class="toc-content">
-                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E6%9C%89%E8%BF%99%E7%AF%87%E6%9D%82%E8%B0%88"><span class="toc-number">1.</span> <span class="toc-text">为什么会有这篇杂谈</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%9B%AE%E7%9A%84%E5%92%8C%E6%84%8F%E4%B9%89"><span class="toc-number">2.</span> <span class="toc-text">目的和意义</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%8E%E7%BB%AD%E6%9C%9F%E5%BE%85"><span class="toc-number">3.</span> <span class="toc-text">后续期待</span></a></li></ol>
             </div>
         </div>
     
@@ -130,18 +122,8 @@
                 </v-btn>
             
                 
-                <v-btn icon href="https://github.com/kb1000fx" target="_blank">
+                <v-btn icon href="https://github.com/JerrfyChern" target="_blank">
                     <v-icon>fab fa-github</v-icon>
-                </v-btn>
-            
-                
-                <v-btn icon href="https://steamcommunity.com/profiles/76561198346798163" target="_blank">
-                    <v-icon>fab fa-steam</v-icon>
-                </v-btn>
-            
-                
-                <v-btn icon href="https://weibo.com/kb1000fx" target="_blank">
-                    <v-icon>fab fa-weibo</v-icon>
                 </v-btn>
             
         </div>
@@ -149,7 +131,7 @@
         <div class="footer-content">
             
                 <span id="busuanzi_container_site_uv" style="display: none;"> 
-                    Total Visitors <span id="busuanzi_value_site_uv"></span>
+                    总访客量 <span id="busuanzi_value_site_uv"></span>
                 </span>
                 <br>
             
@@ -173,7 +155,7 @@
       </div>
       <div id="site-description"></div>
       <div id="mobile-menu" class="d-block d-md-none">
-        <v-text-field label="请输入关键字" data-src="search.xml" v-model="searchHeaderValue" prepend-inner-icon="search" clearable clear-icon="clear" @keydown.enter="EnterSearch(searchHeaderValue,false)"></v-text-field>
+        <v-text-field label="请输入关键字" data-src="search.xml" v-model="searchHeaderValue" prepend-inner-icon="search" clearable clear-icon="clear" @keydown.enter="EnterSearch(searchHeaderValue,true)"></v-text-field>
         <div class="mobile-mini-menu">
           <v-btn icon href="/">
               <v-icon>home</v-icon>
@@ -189,6 +171,11 @@
           </v-btn>
           
             
+            <v-btn icon href="/">
+              <v-icon>fa fa-home</v-icon>
+            </v-btn>
+          
+            
             <v-btn icon href="/archives/">
               <v-icon>archive</v-icon>
             </v-btn>
@@ -198,23 +185,13 @@
               <v-icon>account_circle</v-icon>
             </v-btn>
           
-            
-            <v-btn icon href="https://garybear.cn/">
-              <v-icon>rss_feed</v-icon>
-            </v-btn>
-          
-            
-            <v-btn icon href="https://garybear.cn/hexo-theme-insulin/doc/#/">
-              <v-icon>insert_drive_file</v-icon>
-            </v-btn>
-          
         </div>
       </div>    
     </div>
   </v-col>  
   <v-col cols="4" align-self="end" class="d-none d-md-block">
     <v-col align-self="end">
-      <v-text-field label="请输入关键字" data-src="search.xml" v-model="searchHeaderValue" prepend-icon="search" clearable clear-icon="clear" @keydown.enter="EnterSearch(searchHeaderValue,false)"></v-text-field>
+      <v-text-field label="请输入关键字" data-src="search.xml" v-model="searchHeaderValue" prepend-icon="search" clearable clear-icon="clear" @keydown.enter="EnterSearch(searchHeaderValue,true)"></v-text-field>
     </v-col> 
   </v-col>
 </v-row>
@@ -223,24 +200,24 @@
     
     
         <div class="post-header">
-  <a class="post-header-title font-weight-medium" href="/2025/12/15/hello-world/">Hello World</a>
+  <a class="post-header-title font-weight-medium" href="/2025/12/16/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">我的第一篇文章</a>
   <div class="post-header-meta">   
     <span>
       <v-icon color="">event</v-icon>
-      Posted on:&nbsp;2025-12-15
+      发布于:&nbsp;2025-12-16
     </span>
     <span>
       <v-icon color="">event_available</v-icon>
-      Edited on:&nbsp;2025-12-15
+      更新于:&nbsp;2025-12-16
     </span>
     <span>
       <v-icon color="">folder</v-icon>
-      In:&nbsp;Uncategorized
+      分类于:&nbsp;<a class="category-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
     </span>
     
     <span>
       <v-icon color="">visibility</v-icon>
-      Views:&nbsp;<span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+      阅读次数:&nbsp;<span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
     </span>
     
   </div>
@@ -251,19 +228,19 @@
     
     
     <div class="post-content typo">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="为什么会有这篇杂谈"><a href="#为什么会有这篇杂谈" class="headerlink" title="为什么会有这篇杂谈"></a>为什么会有这篇杂谈</h1><p>2023 - 2025这两年间，随着AI的发展，各种智能工具开始发展，什么Deepseek， Gemini，Qwen等等，实际上极大的改变了作为程序员的我的态度。一方面，我觉得这些AI发展是好的，但是我也发现了，很多AI在处理问题上，虽然知识看似很全面，但是有时候也会显得十分“笨拙”。在个人能力不足的时候，极其容易被AI带跑偏。</p>
+<p>2025年，我逐渐也开始使用AI工具开始带着编程，一方面，我要思考编程实现过程中的“策略”，一方面我还要检查AI生成结果中的“谬误”，往往在使用AI的时候差强人意。我逐渐意识到，即使AI发展了，即使它具备了百科全书的能力，即使他的编码速度已经替代了人工的速度，即使他能给出很好的解决问题的策略，这些AI工具依然存在一个极大的问题 —— <strong>幻觉</strong>。</p>
+<p>模型的幻觉问题时常需要花费很大的人力和时间去检查去纠正，而且这种问题在编码过程中是很要命的，一方面，模型发展确实在编码、在功能实现、甚至简单功能实现上很大的超越了人类，但是一旦出现问题，是在是<span style="color: red; font-size: 24px;">要命！</span></p>
+<p>更有甚者，很多博客，很多文章逐渐开始出现AI化，未经人工检查，谬误百出，甚至一眼就能看到的错误结论，公然出现在搜索结果中，污染网络！</p>
+<p>如图：</p>
+<img src="/2025/12/16/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/20251216124951.png" class="" title="AI生成的错误内容">
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h1 id="目的和意义"><a href="#目的和意义" class="headerlink" title="目的和意义"></a>目的和意义</h1><p>写这篇文章不是为了吐槽现在的AI，我的想法是，他作为一个比搜索引擎高级的百科全书，不仅在一定程度上理解了人在说什么，还具备一定检索能力，用的好，可以大量汇聚人类的百科知识，用的不好就只能被评价为“到处拉屎”，我见过太多的技术，原本出发用意是好的，但不知道为什么用着用着就变了味。</p>
+<p>我希望，所有的博客，文章在成为公共网络的一部分的时候，都要秉持着认真且负责的态度写出。而不是草草生成或者随便两句话加一个被引用了千百次的文章连接，让阅读者从CSDN跳到博客园再跳到Github再跳到个人博客，最终花了大量的时间在检索最终一无所获。</p>
+<p>至此，我决定认证对待每一次输出，从自己开始，每一个技术点，每一个内容和知识都都可以被实践，有图可依，有图可参考，而不是经过千百次垃圾引用丧失博客他本身最初的价值。</p>
+<p>这也是我为什么借助Github成立自己的博客网站（其实最初打算自己去完成前端后端的，但是太耗时间了，这个想法从18年开始就一直没有被付诸实践过，因此怎么快速怎么来吧😥）</p>
+<h1 id="后续期待"><a href="#后续期待" class="headerlink" title="后续期待"></a>后续期待</h1><p>后续，这里将作为一个纯粹的技术文档综合站，我将将我所涉及到的技术文档以具体的篇幅并以文字和具体的图表来记录，把我的实现，我的思路，我遇到的问题，我的解决过程以翔实的文字都一一记录。</p>
+<p>希望环境会越来越好。</p>
 
     </div>
     <!--文末结束语-->
